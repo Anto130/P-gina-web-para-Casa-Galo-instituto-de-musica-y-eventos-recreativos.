@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CASA GALO</title>
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo"><h1>CASA GALO</h1></div>
+  <div class="menu-icon" id="menu-icon">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li>
+        <a href="#explorar">Explorar</a>
+        <ul>
+          <li><a href="canto.html">Canto</a></li>
+          <li><a href="catas.html">Catas</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="instrumentos.html">Instrumentos</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero fade-in">
+  <div class="hero-content">
+    <h2>Un espacio de arte dedicado para vos</h2>
+    <p class="hero-subtitle">
+      Inspiración, creatividad y formación artística en un solo lugar.
+    </p>
+    <a href="#explorar" class="hero-btn">Más información</a>
+  </div>
+</section>
+
+<!-- ===== NUESTRA HISTORIA ===== -->
+<section class="historia fade-in">
+  <div class="historia-container">
+    <h3>Nuestra Historia</h3>
+    <p>
+      Casa Galo nació en 2017 como el sueño de su fundadora, Lorena Yacuzzi, quien decidió crear un espacio de formación y expresión artística. Lo que comenzó con clases de técnica vocal pronto se transformó en un proyecto con identidad propia.
+    </p>
+    <p>
+      En 2018 se inició en San Lorenzo con talleres grupales de canto. Con el tiempo, incorporamos guitarra, piano, teatro y comedia musical. Hoy, Casa Galo se ha consolidado como un instituto privado de arte, combinando enseñanza, creatividad y comunidad.
+    </p>
+  </div>
+</section>
+
+<!-- ===== PROFESORES ===== -->
+<section class="profesores fade-in">
+  <h3>Profesores de Casa Galo</h3>
+  <div class="profesores-container">
+    <div class="profesor">
+      <h4>Carla Casiano</h4>
+      <p>Profesora de Canto. Combina técnica y emoción para potenciar la voz de cada estudiante.</p>
+    </div>
+    <div class="profesor">
+      <h4>Florencia Cejas</h4>
+      <p>Profesora de Piano. Transmite técnica, práctica e interpretación musical con experiencia en vivo.</p>
+    </div>
+    <div class="profesor">
+      <h4>Matías Rojas</h4>
+      <p>Profesor de Guitarra. Enseña distintos estilos y fomenta la expresión a través del instrumento.</p>
+    </div>
+    <div class="profesor">
+      <h4>Lorena Yacuzzi</h4>
+      <p>Fundadora. Fomenta creatividad, profesionalidad, confianza y emoción en sus estudiantes y profesores.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERÍA ===== -->
+<main id="explorar" class="galeria fade-in">
+  <h2>Nuestras Fotos</h2>
+  <p class="centrado-quienes">Explorá nuestras clases, catas, eventos y más.</p>
+  <div class="galeria-container">
+    <img src="../FOTOS/imagen1.jpg" alt="Foto 1">
+    <img src="../FOTOS/imagen2.jpg" alt="Foto 2">
+    <img src="../FOTOS/imagen3.jpg" alt="Foto 3">
+    <img src="../FOTOS/imagen4.jpg" alt="Foto 4">
+    <img src="../FOTOS/imagen5.jpg" alt="Foto 5">
+    <img src="../FOTOS/imagen6.jpg" alt="Foto 6">
+    
+  </div>
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+  </div>
+</main>
+
+<!-- ===== CONTACTO ===== -->
+<section class="contacto fade-in">
+  <h3>Comunicate con Nosotros</h3>
+  <p class="centrado-quienes">Podés escribirnos o visitarnos según tu preferencia.</p>
+  <div class="contacto-info">
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/3476644833" target="_blank">+54 9 3476644833</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/casagalosl" target="_blank">@casagalosl</a></p>
+    <p><strong>Email:</strong> <a href="mailto:info@casagalo.com">info@casagalo.com</a></p>
+    <p><strong>Ubicación:</strong> <a href="https://www.google.com/maps/place/CASA+GALO/data=!4m2!3m1!1s0x95b65b3566197927:0x60cdf3d025c86846?sa=X&ved=1t:242&hl=es_419&ictx=111" target="_blank" class="btn-maps-min">Ver en Google Maps</a></p>
+    <p><strong>Horario de atención:</strong> Lun a Vie 09:00-22:00</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer fade-in">
+  <div class="footer-content">
+    <p>&copy; 2025 Casa Galo. Todos los derechos reservados.</p>
+    <div class="footer-social">
+      <a href="https://instagram.com/tuusuario" target="_blank">Instagram</a>
+      <a href="https://wa.me/5491123456789" target="_blank">WhatsApp</a>
+      <a href="mailto:info@casagalo.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../JS/menu.js"></script>
+<script src="../JS/scroll.js"></script>
+<script>
+  // Lightbox para agrandar imágenes
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const images = document.querySelectorAll(".galeria-container img");
+  const closeBtn = document.querySelector(".close");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "block";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.onclick = function() { lightbox.style.display = "none"; }
+  lightbox.onclick = function(e) { if(e.target === lightbox) lightbox.style.display = "none"; }
+</script>
+
+</body>
+</html>
