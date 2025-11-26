@@ -1,0 +1,142 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA GALO</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+    <header>
+    <div class="logo"><h1>CASA GALO</h1></div>
+    <div class="menu-icon" id="menu-icon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav id="nav-menu">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+            <a href="#explorar">Explorar</a>
+            <ul>
+                <li><a href="canto.html">Canto</a></li>
+                <li><a href="instrumentos.html">Instrumentos</a></li>
+                <li><a href="interpretacion.html">Interpretación</a></li>
+                <li><a href="catas.html">Catas</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="ingles.html">Inglés</a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+    </header>
+
+    <form action="#" method="POST" class="formulario-galo">
+    <h2>Formulario de Inscripción – Casa Galo</h2>
+
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        <label>Nombre completo:</label>
+        <input type="text" name="nombre" required>
+
+        <label>DNI (opcional):</label>
+        <input type="text" name="dni">
+
+        <label>Fecha de nacimiento:</label>
+        <input type="date" name="nacimiento" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Teléfono:</label>
+        <input type="tel" name="telefono" required>
+
+        <label>Dirección (opcional):</label>
+        <input type="text" name="direccion">
+    </fieldset>
+<br>
+<br>
+<br>
+
+    <fieldset>
+        <legend>Área de inscripción</legend>
+
+        <label>Seleccioná la formación que querés cursar:</label>
+        <select name="area" required>
+            <option value="" disabled selected>Seleccionar...</option>
+            <option value="canto">Canto</option>
+            <option value="ingles">Inglés</option>
+            <option value="instrumentos">Instrumentos</option>
+            <option value="interpretacion">Interpretación</option>
+            <option value="composicion">Composición Musical</option>
+        </select>
+
+        <label>Nivel (si ya tiene experiencia):</label>
+        <select name="nivel">
+            <option value="" disabled selected>Seleccionar…</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+        </select>
+
+        <label>Disponibilidad horaria:</label>
+        <input type="text" name="horarios" placeholder="Ej: Lunes y jueves por la tarde">
+    </fieldset>
+
+    <label>Comentarios adicionales:</label>
+    <textarea name="comentarios"></textarea>
+
+    <button type="submit">Enviar inscripción</button>
+</form>
+
+
+    <section class="contacto fade-in">
+    <h3>Comunicate con Nosotros</h3>
+    <p class="centrado-quienes">Podés escribirnos o visitarnos según tu preferencia.</p>
+    <div class="contacto-info">
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/3476644833" target="_blank">+54 9 3476644833</a></p>
+        <p><strong>Instagram:</strong> <a href="https://instagram.com/casagalosl" target="_blank">@casagalosl</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@casagalo.com">info@casagalo.com</a></p>
+        <p><strong>Ubicación:</strong> <a href="https://www.google.com/maps/place/CASA+GALO/data=!4m2!3m1!1s0x95b65b3566197927:0x60cdf3d025c86846?sa=X&ved=1t:242&hl=es_419&ictx=111" target="_blank" class="btn-maps-min">Ver en Google Maps</a></p>
+        <p><strong>Horario de atención:</strong> Lun a Vie 09:00-22:00</p>
+    </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer fade-in">
+    <div class="footer-content">
+        <p>&copy; 2025 Casa Galo. Todos los derechos reservados.</p>
+        <div class="footer-social">
+        <a href="https://instagram.com/tuusuario" target="_blank">Instagram</a>
+        <a href="https://wa.me/5491123456789" target="_blank">WhatsApp</a>
+        <a href="mailto:info@casagalo.com">Email</a>
+        </div>
+    </div>
+    </footer>
+
+    <script src="../JS/menu.js"></script>
+    <script src="../JS/scroll.js"></script>
+    <script>
+    // Lightbox para agrandar imágenes
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const images = document.querySelectorAll(".galeria-container img");
+    const closeBtn = document.querySelector(".close");
+
+    images.forEach(img => {
+        img.addEventListener("click", () => {
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+        });
+    });
+
+    closeBtn.onclick = function() { lightbox.style.display = "none"; }
+    lightbox.onclick = function(e) { if(e.target === lightbox) lightbox.style.display = "none"; }
+    </script>
+
+    </body>
+    </html>
