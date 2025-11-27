@@ -220,24 +220,29 @@ nav ul li ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 430px; 
-    padding: 20px;
-    max-width: 430px;
     width: 100%;
-    
 }
+
 
 /* Caja del formulario */
 .formulario-galo {
     width: 100%;
-    max-width: 430px;
+    max-width: 540px;
     background: #c00df77e;
     padding: 20px;
-    min-height: 430px; 
+    box-sizing: border-box;
     justify-content: center; 
     border-radius: 4px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
     font-family: Arial, sans-serif;
+}
+
+.form-box {
+    max-width: 600px;  /* ← Ancho del bloque contenedor */
+    width: 100%;
+    margin: 100px;     /* ← Esto lo centra */
+    padding: 10px 10px 10px 10px; 
+
 }
 
 

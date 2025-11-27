@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+ <!DOCTYPE html>
     <html lang="es">
     <head>
     <meta charset="UTF-8">
@@ -34,8 +34,11 @@
     </nav>
     </header>
 
+<div class="container-galo">
+    <div class="form-box">
+
     <form action="#" method="POST" class="formulario-galo">
-    <h2>Formulario de Inscripción – Casa Galo</h2>
+    <h3>Formulario de Inscripción – Casa Galo</h3>
 
     <fieldset>
         <legend>Datos personales</legend>
@@ -62,38 +65,50 @@
 <br>
 <br>
 
-    <fieldset>
-        <legend>Área de inscripción</legend>
+        <fieldset>
+            <legend>Área de inscripción</legend>
 
-        <label>Seleccioná la formación que querés cursar:</label>
-        <select name="area" required>
-            <option value="" disabled selected>Seleccionar...</option>
-            <option value="canto">Canto</option>
-            <option value="ingles">Inglés</option>
-            <option value="instrumentos">Instrumentos</option>
-            <option value="interpretacion">Interpretación</option>
-            <option value="composicion">Composición Musical</option>
-        </select>
+            <label>Seleccioná la formación que querés cursar:</label>
+            <select name="area" required>
+                <option value="" disabled selected>Seleccionar...</option>
+                <option value="canto">Canto</option>
+                <option value="ingles">Inglés</option>
+                <option value="instrumentos">Instrumentos</option>
+                <option value="interpretacion">Interpretación</option>
+                <option value="composicion">Composición Musical</option>
+            </select>
 
-        <label>Nivel (si ya tiene experiencia):</label>
-        <select name="nivel">
-            <option value="" disabled selected>Seleccionar…</option>
-            <option value="principiante">Principiante</option>
-            <option value="intermedio">Intermedio</option>
-            <option value="avanzado">Avanzado</option>
-        </select>
+            <label>Nivel (si ya tiene experiencia):</label>
+            <select name="nivel">
+                <option value="" disabled selected>Seleccionar…</option>
+                <option value="principiante">Principiante</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
 
-        <label>Disponibilidad horaria:</label>
-        <input type="text" name="horarios" placeholder="Ej: Lunes y jueves por la tarde">
-    </fieldset>
+            <label>Disponibilidad horaria:</label>
+            <input type="text" name="horarios" placeholder="Ej: Lunes y jueves por la tarde">
+        </fieldset>
 
-    <label>Comentarios adicionales:</label>
-    <textarea name="comentarios"></textarea>
+        <label>Comentarios adicionales:</label>
+        <textarea name="comentarios"></textarea>
 
-    <button type="submit">Enviar inscripción</button>
-</form>
+        <button type="submit">Enviar inscripción</button>
+    </form>
+</div>
+</div>
 
 
+
+    </div>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
+    </div>
+    </main>
+
+    <!-- ===== CONTACTO ===== -->
     <section class="contacto fade-in">
     <h3>Comunicate con Nosotros</h3>
     <p class="centrado-quienes">Podés escribirnos o visitarnos según tu preferencia.</p>
